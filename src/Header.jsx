@@ -1,19 +1,19 @@
 import React from 'react';
 import './Header.css';
 import {Link} from 'react-router-dom';
-// import logo from './images/edu_logo.jpeg';
+import logo from './images/educhess_logo.png';
 import SearchIcon from '@mui/icons-material/Search';
 
 function Header() {
     return (
         <div className='header'>
             <Link to="/">
-                <img className="header_logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Educhess_logo"/>
+                <img className="header_logo" src={logo} alt="Educhess_logo"/>
             </Link>
-            <div className="header_search">
+            {/* <div className="header_search">
                 <input className="header_searchInput" type="text" />
                 <SearchIcon className="header_searchIcon"/>
-            </div>
+            </div> */}
 
             <div className="header_nav">
                 <Link to='/login'>

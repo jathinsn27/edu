@@ -3,7 +3,7 @@ import React from 'react'
 function Home() {
     return (
         <div>
-            <p>Need to build educhess 😠 🤡 </p>
+            <p>Need to build educhess 🚀 🤡 </p>
         </div>
     )
 }
