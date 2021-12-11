@@ -1,14 +1,33 @@
 import React from 'react';
 import './Login.css';
+import logo from './images/educhess_logo.png';
 import { Link } from "react-router-dom";
 
 function Login() {
     return (
         <div className='login'>
             <Link to='/'>
-                <img className="login_logo" src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png' alt="Logo"/>
+                <img className="login_logo" src={logo} alt="Logo"/>
             </Link>
-            <h1>This is Login</h1>
+
+            <div className='login__container'>
+                <h1>Sign-in</h1>
+
+                <form>
+                    {/* <h5>E-mail</h5> */}
+                    <input type='text' placeholder='Email'/>
+
+                    {/* <h5>Password</h5> */}
+                    <input type='password' placeholder='Password'/>
+
+                    <button type='submit' className='login__signInButton'>Sign In</button>
+                </form>
+
+                <p>By Signing in i confirm</p>
+
+                <button className='login__registerButton'>Create your Account</button>
+            </div>
+
         </div>
     )
 }

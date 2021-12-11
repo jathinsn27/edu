@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 import {Link} from 'react-router-dom';
 import logo from './images/educhess_logo.png';
-import SearchIcon from '@mui/icons-material/Search';
+// import SearchIcon from '@mui/icons-material/Search';
 
 function Header() {
     return (

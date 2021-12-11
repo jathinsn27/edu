@@ -1,9 +1,13 @@
 import React from 'react'
+import Header from './Header.jsx';
+// import Particle from './particle.js';
 
 function Home() {
     return (
-        <div>
-            <p>Need to build educhess 🚀 🤡 </p>
+        <div className='home'>
+            <Header />
+            <p>Building educhess 🚀 </p>
+            {/* <Particle /> */}
         </div>
     )
 }
