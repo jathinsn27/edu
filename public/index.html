@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -9,6 +9,11 @@
       name="description"
       content="Web site created using create-react-app"
     />
+
+        <!--For Dark/Light mode Toggle-->
+        <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+
+
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -24,6 +29,39 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+
+   
+
+    <div class="text center col-sm-6 pt-5 mt-5 mb-5">Hi <span class="wave">👋</span>,Welcome To <span>Educhess</span>
+      <div class="center">
+          <div>
+              <img src="assets/images/chess.svg" alt="" class="rounded-circle" height="200" width="200">
+          </div>
+          <p>We are into&nbsp;
+              <h1 class="animated-text" data-words="Mentoring, Training materials, Game analysis"></h1>
+          </p>
+          <div>
+              <div class="social-icons">
+
+                  <a class="socialicon facebook" href="https://m.facebook.com/Educhess-121240309743197/?ref=content_filter" target="_blank" rel="author">
+                      <i class="fab fa-facebook"></i>
+                  </a>
+
+                  <a class="socialicon instagram" href="https://www.instagram.com/educhess_academy/" target="_blank" rel="author">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+
+                  <a class="socialicon linkedin" href="https://www.linkedin.com/company/educhess-academy" target="_blank" rel="author">
+                      <i class="fab fa-linkedin"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
     <title>React App</title>
   </head>
   <body>
@@ -39,5 +77,11 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/home.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
+    <script src="assets/js/particle.js"></script>
   </body>
 </html>

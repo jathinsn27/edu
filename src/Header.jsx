@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import {Link} from 'react-router-dom';
 import logo from './images/educhess_logo.png';
+import Toggle from './Toggle.js';
 // import SearchIcon from '@mui/icons-material/Search';
 
 function Header() {
@@ -32,6 +33,8 @@ function Header() {
                     <span className="header_optionLineOne">Reviews</span>
                     <span className="header_optionLineOne">Form</span>
                 </div>
+
+                <Toggle />
 
             </div>
         
