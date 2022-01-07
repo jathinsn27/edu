@@ -2,10 +2,12 @@
   height: 70px;
   display: flex;
   align-items: center;
-  background-color: #131921;
+  background-color: #b1afb3;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 150;
+  position:fixed;
+  top:0;
 }
 
 .header_logo {
@@ -15,19 +17,6 @@
   margin-top: 18px;
 }
 
-.header_search {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  border-top: 24px;
-}
-
-.header_searchInput {
-  height: 12px;
-  padding: 10px;
-  border: none;
-  width: 100%;
-}
 
 /* .header_searchIcon {
   padding: 5px;

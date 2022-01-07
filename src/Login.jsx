@@ -3,31 +3,33 @@ import './Login.css';
 import logo from './images/educhess_logo.png';
 import { Link } from "react-router-dom";
 
+import styled from "styled-components";
+import { AccountBox } from "./components/accountBox";
+import Particle from './Particle.jsx';
+import './index.css';
+
+const AppContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index:2;
+  position:absolute; 
+  width: 100%; height: 100%;
+   background-color:#78686f;
+    background-image: url("");
+     background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
+`;
+
 function Login() {
     return (
         <div className='login'>
-            <Link to='/'>
-                <img className="login_logo" src={logo} alt="Logo"/>
-            </Link>
-
-            <div className='login__container'>
-                <h1>Sign-in</h1>
-
-                <form>
-                    {/* <h5>E-mail</h5> */}
-                    <input type='text' placeholder='Email'/>
-
-                    {/* <h5>Password</h5> */}
-                    <input type='password' placeholder='Password'/>
-
-                    <button type='submit' className='login__signInButton'>Sign In</button>
-                </form>
-
-                <p>By Signing in i confirm</p>
-
-                <button className='login__registerButton'>Create your Account</button>
-            </div>
-
+       <AppContainer>
+         <Particle  />
+         </AppContainer> 
+ <div id='loginbox'>  <AccountBox /> </div>
         </div>
     )
 }
